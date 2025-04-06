@@ -14,7 +14,14 @@
     margin-bottom: 30px;
   }
 
-  
+  .indent {
+    margin: 0 auto;
+    padding-left: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    color: #b37799; /* ピンク寄りのブラウン */
+  }
+
   .post h2 {
     margin-top: 0;
     color: #b04a6b;
@@ -192,5 +199,24 @@
   .article-title a:hover {
     text-decoration: underline;
   }
+
+  .article-detail {
+    padding: 0 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
   
+  .article-detail {
+    background-color: #fff4fa; /* うすピンク背景 */
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(255, 192, 203, 0.3);
+  }
   
+  .article-title {
+  padding: 1rem 2rem; /* 上下1rem・左右2rem */
+  margin-bottom: 1rem;
+  border-left: 4px solid #f0d8e0; /* ピンクのラインでアクセント🎀 */
+  font-size: 1.8rem;
+  color: #d399b9;
+  }
