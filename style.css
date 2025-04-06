@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    font-family: 'Yomogi', cursive;
+    font-size: 2.5rem;
+    color: #d399b9;
+    text-align: center;
+    border-bottom: 2px dashed #f0d8e0;
+    padding-bottom: 0.5rem;
+    margin-bottom: 30px;
+  }
+
+  
+  .post h2 {
+    margin-top: 0;
+    color: #b04a6b;
+    font-family: 'Yomogi', cursive;
+    font-size: 1.5rem;
+  }
+  
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #6b4e3d; /* 優しめブラウン */
+    margin: 1rem 0;
+  }
+
+  
+  body {
+    font-family: 'Yomogi', cursive;  /* ← 使いたいフォントをここに！ */
+    background-color: #fffafc;       /* ← 優しいピンク系の背景 */
+    color: #4e3b31;                  /* ← テキストはぬか系やさしい茶色 */
+    margin: 0;
+    padding-top: 70px;  
+    line-height: 2;             /* ← ナビバー分だけ下に余白（ズレ防止） */
+  }
+ 
+
+  .profile-card {
+    background-color: #ffeef5;
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    max-width: 400px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .profile-card ul {
+    list-style: none; /* 箇条書きマークを消す */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .profile-card li {
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .profile-details {
+    text-align: center; /* ←中央揃えにする */
+    margin-top: 1rem;
+  }
+
+  .profile-line {
+    margin: 0.5rem 0;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+
+  .profile-details p {
+    margin: 0.3rem 0;
+  }
+
+  .hero {
+    background: linear-gradient(to right, #ffe6f0, #ffe6fa); /* ふんわりグラデ */
+    padding: 80px 20px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(255, 192, 203, 0.3);
+  }
+  
+  .hero h1 {
+    font-family: 'Yomogi', cursive;
+    font-size: 2.5em;
+    color: #cc6699;
+    margin-bottom: 20px;
+  }
+
+  .hero p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .hero-button {
+    background-color: #f8b5d0;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #e48fb5;
+  }
+
+  
+
+  
+  
+  .navbar {
+    background-color: #fce5ee;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .navbar a {
+    font-family: 'Kosugi Maru', sans-serif; /* 任意のかわいい日本語フォント */
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #9c4f58;
+  }
+
+  .navbar a:hover {
+    color: #e91e63; /* ホバー時 */
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 40px auto 60px auto; /* 下に余白追加 */
+    padding: 0 20px;
+  }
+  
+  .post {
+    background: #ffeef4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08);
+  }
+  
+  .post h2 {
+    margin-top: 0;
+    color: #b04a6b;
+  }
+  
+  .post p {
+    margin-bottom: 0;
+  }
+  
+  a {
+    color: #c06b9b;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .article-title a {
+    color: #d399b9;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+  
+  .article-title a:hover {
+    text-decoration: underline;
+  }
+  
+  
