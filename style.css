@@ -4,6 +4,10 @@
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   h1 {
     font-family: 'Yomogi', cursive;
     font-size: 2.5rem;
@@ -48,7 +52,7 @@
   }
  
 
-  .profile-card {
+  .about {
     background-color: #ffeef5;
     border-radius: 16px;
     padding: 2rem;
@@ -58,7 +62,24 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   
-  .profile-image {
+  
+  #profile-card {
+    background-color: #ffeef5;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 16px rgba(255, 192, 203, 0.2);
+    text-align: center; /* ← これが超重要！中央寄せしてくれる */
+    max-width: 600px;
+    margin: 4rem auto; /* ← 中央に配置＋上に余白 */
+    font-family: "Yu Gothic", sans-serif;
+  }
+  
+
+ 
+
+  #profile-card img {
+    display: block;
+    margin: 0 auto;           /* ← 画像を中央に */
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -66,21 +87,15 @@
     margin-bottom: 1rem;
   }
 
-  .profile-card ul {
-    list-style: none; /* 箇条書きマークを消す */
-    padding: 0;
-    margin: 0;
-  }
-  
-  .profile-card li {
-    text-align: left;
+  #profile-card h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #662244;
     margin-bottom: 0.5rem;
   }
+  
 
-  .profile-details {
-    text-align: center; /* ←中央揃えにする */
-    margin-top: 1rem;
-  }
+ 
 
   .profile-line {
     margin: 0.5rem 0;
