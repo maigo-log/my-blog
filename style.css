@@ -1,4 +1,4 @@
-* {
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -341,4 +341,57 @@
     list-style: inside;
     padding-left: 1rem;
   }
+}
+
+.delete-btn {
+  color: white;
+  background-color: #ff7777;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.delete-btn:hover {
+  background-color: #ff4444;
+}
+
+/* これで一旦統一しよう！ */
+.post-form {
+  background-color: #fff0f5;
+  border: 2px dashed #f8c3cd;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 4px 10px rgba(248, 195, 205, 0.3);
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.post-form input[type="text"],
+.post-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ffc0cb;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(255, 192, 203, 0.2);
+}
+
+.post-form button {
+  background-color: #f8c3cd;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.post-form button:hover {
+  background-color: #f7a8b8;
+  box-shadow: 0 0 10px #f8c3cd;
 }

@@ -24,8 +24,9 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
   <nav class="navbar">
     <a href="index.html">Home</a>
-    <a href="blog.php">Blog</a>
+    <a href="index.php">Blog</a>
     <a href="index.html#profile-card">About me</a>
+    <a href="post.php">Post</a>
   </nav>
 
   <div class="container">
@@ -33,10 +34,17 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     <?php foreach ($articles as $article): ?>
       <div class="post">
-        <h2>
-          <a href="#"><?= htmlspecialchars($article['created_at']) ?> – <?= htmlspecialchars($article['title']) ?></a>
-        </h2>
-        <p><?= nl2br(htmlspecialchars($article['content'])) ?></p>
+      <h2>
+  <a href="article.php?id=<?= $article['id'] ?>">
+    <?= htmlspecialchars($article['created_at']) ?> – <?= htmlspecialchars($article['title']) ?>
+  </a>
+</h2>
+<?php
+  $preview = mb_substr($article['content'], 0, 50); // 最初の100文字だけ
+  echo nl2br(htmlspecialchars($preview)) . '...';
+?>
+<a href="article.php?id=<?= $article['id'] ?>">続きを読む</a>
+        <a class="delete-btn" href="delete.php?id=<?= $article['id'] ?>" onclick="return confirm('本当に削除しますか？');">🗑️ 削除</a>
       </div>
     <?php endforeach; ?>
 
