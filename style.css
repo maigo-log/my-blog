@@ -395,3 +395,84 @@
   background-color: #f7a8b8;
   box-shadow: 0 0 10px #f8c3cd;
 }
+
+
+
+.btn-group a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px; /* ボタン幅を統一 */
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Kosugi Maru', sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.edit-btn {
+  background-color: #ffd166;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background-color: #fcbf49;
+}
+
+.delete-btn {
+  background-color: #ff7777;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #ff4444;
+}
+
+.alert.success {
+  background-color: #e6ffe6;
+  color: #2e7d32;
+  border: 1px solid #b2d8b2;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.alert {
+  background-color: #ffeef5;
+  color: #cc6699;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(248, 195, 205, 0.3);
+  opacity: 1;
+  transition: opacity 1s ease; /* ← ここでフェードの時間設定 */
+}
+.alert.hide {
+  opacity: 0;
+}
+
+.alert-delete {
+  background-color: #fff0f0;            /* やさしいピンク背景 */
+  border: 2px solid #f8b5c4;            /* ピンクの枠線 */
+  color: #b33c3c;                       /* 文字は落ち着いた赤 */
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(255, 182, 193, 0.2); /* うすピンク影 */
+  opacity: 1;
+  transition: opacity 1s ease;
+  font-family: 'Kosugi Maru', sans-serif;
+}
+
+.alert-delete.hide {
+  opacity: 0;
+}

@@ -18,7 +18,7 @@ $article = $stmt->fetch(PDO::FETCH_ASSOC);
 </head>
 <body>
   <nav class="navbar">
-    <a href="index.php">Home</a>
+    <a href="index.html">Home</a>
     <a href="blog.php">Blog</a>
     <a href="index.html#profile-card">About me</a>
     <a href="post.php">blog</a>

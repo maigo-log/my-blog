@@ -23,6 +23,6 @@ $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 
 // 削除後は記事一覧へ戻る
-header("Location: blog.php");
+header("Location: blog.php?deleted=1");
 exit;
 ?>
